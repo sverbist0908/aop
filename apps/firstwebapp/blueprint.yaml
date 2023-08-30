@@ -128,4 +128,4 @@ resources:
     properties:
       networkType: existing
       constraints:
-        - tag: 'env:vsphere'
+        - tag: 'nw:existing'
