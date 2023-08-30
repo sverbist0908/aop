@@ -1,4 +1,5 @@
 formatVersion: 1
+name: firstwebapp
 inputs:
   size:
     type: string
