@@ -9,10 +9,10 @@ inputs:
     default: small
   image:
     type: string
-    default: Ubuntu-18
+    default: Linux (Ubuntu)
   username:
     type: string
-    default: demo
+    default: vmw
   password:
     type: string
     encrypted: true
@@ -78,7 +78,7 @@ resources:
           - ufw reload
           - mkdir /var/www/edutech
           - cd /tmp
-          - git clone https://github.com/thecloudxpert/demo-web-app.git /tmp/edutech
+          - git clone https://github.com/sverbist0908/apps/firstwebapp.git /tmp/edutech
           - mv /tmp/edutech/config/edutech.conf /etc/apache2/sites-available/edutech.conf
           - mv /tmp/edutech /var/www/edutech/
           - chown -R www-data.www-data /var/www/edutech
